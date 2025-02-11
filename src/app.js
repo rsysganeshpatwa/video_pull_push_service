@@ -1,5 +1,5 @@
 require("dotenv").config();
-const { HLSPullPush, S3BucketOutput } = require("@eyevinn/hls-pull-push");
+const { HLSPullPush, S3BucketOutput,MediaPackageOutput } = require("@eyevinn/hls-pull-push");
 
 // Initialize the service
 const pullPushService = new HLSPullPush();
