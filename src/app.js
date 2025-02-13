@@ -3,7 +3,7 @@ const { HLSPullPush, S3BucketOutput,MediaPackageOutput } = require("@eyevinn/hls
 
 // Initialize the service
 const pullPushService = new HLSPullPush();
-pullPushService.registerPlugin("s3", new S3BucketOutput());
+//pullPushService.registerPlugin("s3", new S3BucketOutput());
 pullPushService.registerPlugin("mediapackage", new MediaPackageOutput());
 pullPushService.listen(process.env.PORT || 8080);
 
